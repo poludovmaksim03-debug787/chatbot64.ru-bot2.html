@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Многозадачный чат‑бот для проверки ДЗ</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="app">
+        <header>
+            <h1>🤖 Многозадачный чат‑бот для проверки домашнего задания</h1>
+            <p>Сканирование → Распознавание → Анализ → Проверка → Объяснение</p>
+        </header>
+
+        <div class="container">
+            <!-- Расширенная камера -->
+            <div class="camera-section">
+                <h2>📸 Расширенная камера</h2>
+                <div class="camera-controls">
+                    <button id="toggleCamera">🔄 Переключить камеру</button>
+            <button id="startAutoScan">🔎 Автосканирование</button>
+            <button id="capture">📷 Сделать снимок</button>
+            <button id="stopAutoScan" style="display: none;">⏹ Остановить сканирование</button>
+                </div>
+                <video id="video" autoplay muted playsinline width="100%"></video>
+                <canvas id="canvas" style="display: none;"></canvas>
+            </div>
+
+            <!-- Распознанный текст -->
+            <div class="text-section">
+                <h2>📝 Распознанный текст</h2>
+                <textarea id="textOutput" readonly placeholder="Здесь появится текст с фото..."></textarea>
+            </div>
+
+            <!-- Чат с AI -->
+            <div class="chat-section">
+                <h2>💬 Чат с AI‑помощником</h2>
+                <div id="chatMessages" class="messages"></div>
+                <div class="input-area">
+                    <input type="text" id="userInput" placeholder="Задайте вопрос или отправьте текст...">
+            <button id="sendBtn">➤ Отправить</button>
+                </div>
+            </div>
+
+            <!-- Результаты проверки -->
+            <div class="results-section">
+                <h2>🧠 Результаты проверки</h2>
+                <div id="aiResponse" class="response"></div>
+                <div class="status" id="status"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Библиотеки -->
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.1.1/dist/tesseract.min.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>
