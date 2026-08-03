@@ -1,6 +1,6 @@
 class AIProcessor { 
     constructor(apiKey) {
-        this.apiKey = apiKey; 
+        this.apiKey = 'AQVN3URzJQka8xSpp0DxNgbXa38dQmrXH5IrRmdt'; 
         this.baseUrl = 'https://api.openai.com/v1/chat/completions';
         this.subjects = {
             'Математика': ['sin', 'cos', 'tg', 'ctg', 'x^', 'y=', 'уравнение', 'интеграл', 'производная', 'функция', 'график'], 
@@ -39,7 +39,7 @@ class AIProcessor {
         return { subject, confidence };
     }
 
-    async callChatGPT(prompt, model = 'gpt-4o', maxTokens = 1000) {
+    async callChatGPT(prompt, model = 'gpt://b1ghp2t1hbddkurtrt9g/yandexgpt-5-pro/latest', maxTokens = 7000) {
         const requestBody = {
             model: model,
             messages: [
