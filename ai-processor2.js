@@ -1,7 +1,7 @@
 class AIProcessor { 
     constructor(apiKey) {
         this.apiKey = 'AQVN3URzJQka8xSpp0DxNgbXa38dQmrXH5IrRmdt'; 
-        this.baseUrl = 'https://api.openai.com/v1/chat/completions';
+        this.baseUrl = 'https://llm.api.cloud.yandex.net/foundationModels/v1/completion';
         this.subjects = {
             'Математика': ['sin', 'cos', 'tg', 'ctg', 'x^', 'y=', 'уравнение', 'интеграл', 'производная', 'функция', 'график'], 
             'Алгебра': ['x^', 'y=', 'функция', 'график', 'система уравнений', 'неравенство', 'многочлен'],
