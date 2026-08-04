@@ -68,7 +68,7 @@ async recognizeTextFromImage(imageData) {
         this.status.textContent = 'Обращение к Yandex GPT...';
 
         try {
-            const response = await fetch('https://cors-anywhere.herokuapp.com/https://ai.api.cloud.yandex.net/v1', { 
+            const response = await fetch('https://llm.api.cloud.yandex.net/foundationModels/v1/completion', { 
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
