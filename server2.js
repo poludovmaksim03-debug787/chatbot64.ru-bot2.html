@@ -8,7 +8,6 @@ app.use(express.static('.')); // Для обслуживания статиче�
 
 
 // Получаем API‑ключ и идентификатор каталога из переменных окружения
-const YANDEX_API_KEY = 'AQVN3URzJQka8xSpp0DxNgbXa38dQmrXH5IrRmdt';
 const YANDEX_FOLDER_ID = 'b1ghp2t1hbddkurtrt9g'
 
 
