@@ -68,7 +68,7 @@ async recognizeTextFromImage(imageData) {
         this.status.textContent = 'Обращение к Yandex GPT...';
 
         try {
-            const response = await fetch('https://llm.api.cloud.yandex.net/foundationModels/v1/completion', { 
+            const response = await fetch('https://express-js-on-vercel-two-blue-27.vercel.app/', { 
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
