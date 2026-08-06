@@ -6,7 +6,7 @@ class HomeworkCheckerBot {
         this.textOutput = document.getElementById('textOutput');
         this.chatMessages = document.getElementById('chatMessages'); 
         this.userInput = document.getElementById('userInput');
-        this.aiResponse = document.getElementById('aiResponse');
+        this.aiResponse = document.getElementById('aiResponse'); 
         this.status = document.getElementById('status');
         
 
