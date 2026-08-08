@@ -53,12 +53,28 @@
             </div>
         </div>
     </div>
+<script type="module">
+  const url = 'https://functions.yandexcloud.net/d4e0djanh02gmh4he289';
 
-    <!-- Библиотеки -->
-    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.1.1/dist/tesseract.min.js"></script>
-    <script src="script2.js"></script>
-    <script src="ai-processor2.js"></script> 
-    <script src="chat.js"></script> 
-    <script src="server2.js></script>
+  document.getElementById('sendBtn').addEventListener('click', async () => {
+    const out = document.getElementById('output');
+    out.textContent = 'Запрос...';
+
+    try {
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ question: 'Привет, как дела?' })
+      });
+
+      const data = await res.json();
+      out.textContent = JSON.stringify(data, null, 2);
+      console.log('Ответ:', data);
+    } catch (e) {
+      out.textContent = 'Ошибка сети: ' + e.message;
+      console.error(e);
+    }
+  });
+</script>
 </body>
 </html> 
