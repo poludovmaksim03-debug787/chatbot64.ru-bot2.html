@@ -1,35 +1,5 @@
-<svg width="300" height="300" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <radialGradient id="bgGrad" cx="50%" cy="50%" r="100%">
-      <stop offset="0%" stop-color="#9b59b6" />
-      <stop offset="100%" stop-color="#2c3e50" />
-    </radialGradient>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
-
-  <!-- Фон -->
-  <circle cx="200" cy="200" r="200" fill="url(#bgGrad)" />
-  
-  <!-- Белая рамка -->
-  <circle cx="200" cy="200" r="170" fill="none" stroke="white" stroke-width="10" filter="url(#glow)" />
-
-  <!-- ТВОЯ КАРТИНКА: Вставь ссылку ниже вместо src -->
-  <!-- x и y - координаты левого верхнего угла картинки, width и height - размер -->
-  <image 
-    href="https://avatars.mds.yandex.net/i?id=c0d95b8c4d026d7605e1d8a5f32b23f8_l-7054193-images-thumbs&n=13" 
-    x="100" y="100" 
-    width="200" height="200" 
-    preserveAspectRatio="xMidYMid slice" 
-    style="filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));"
-  />
-
-  <!-- Текст -->
-  <text x="200" y="130" text-anchor="middle" fill="white" font-family="Arial" font-weight="bold" font-size="24">ШКОЛА № 64</text>
-  <text x="200" y="320" text-anchor="middle" fill="white" font-family="Arial" font-weight="bold" font-size="20">ИЩУ СВОЮ ВЫСОТУ</text>
+<svg xmlns="http://w3.org" viewBox=" 0 0 300 80" width="100%">
+  <a hrew="https://avatars.mds.yandex.net/i?id=c0d95b8c4d026d7605e1d8a5f32b23f8_l-7054193-images-thumbs&n=13" target="_top">
+    <rect width="100%" height="100%" fill="transparent"/>
+  </a>
 </svg>
