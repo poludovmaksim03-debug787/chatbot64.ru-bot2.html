@@ -1,4 +1,55 @@
-<svg xmlns="https://avatars.mds.yandex.net/i?id=c0d95b8c4d026d7605e1d8a5f32b23f8_l-7054193-images-thumbs&n=13" viewBox="0 0 100 100" fill="none">
-  <rect width="100" height="100" fill="#4F46E5"/>
-  <text x="50" y="75" font-family="Arial, sans-serif" font-size="60" font-weight="bold" text-anchor="middle" fill="white">A</text>
+<svg width="300" height="300" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Определяем градиент фона и эффект свечения -->
+  <defs>
+    <radialGradient id="logoGradient" cx="50%" cy="50%" r="100%">
+      <stop offset="0%" stop-color="#9b59b6" />
+      <stop offset="100%" stop-color="#2c3e50" />
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 1. Фон (круг с градиентом) -->
+  <circle cx="200" cy="200" r="200" fill="url(#logoGradient)" />
+
+  <!-- 2. Белая обводка по кругу -->
+  <circle cx="200" cy="200" r="170" fill="none" stroke="white" stroke-width="10" />
+
+  <!-- 3. Текст "ШКОЛА № 64" -->
+  <text x="200" y="130" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-weight="bold" font-size="28">
+    ШКОЛА № 64
+  </text>
+
+  <!-- 4. Текст "ИЖЕВСК" (под углом) -->
+  <text x="300" y="210" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-weight="bold" font-size="24" transform="rotate(45, 300, 210)">
+    ИЖЕВСК
+  </text>
+
+  <!-- 5. Текст "ИЩУ СВОЮ ВЫСОТУ" -->
+  <text x="200" y="320" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-weight="bold" font-size="20">
+    ИЩУ СВОЮ ВЫСОТУ
+  </text>
+
+  <!-- 6. Ракета (центральный элемент) -->
+  <!-- filter="url(#glow)" добавляет мягкое свечение -->
+  <path d="M180 110 L200 60 L220 110 L230 110 L230 230 L210 230 L210 170 L190 170 L190 230 L170 230 L170 110 Z" 
+        fill="white" filter="url(#glow)" />
+  
+  <!-- Иллюминатор ракеты -->
+  <circle cx="200" cy="140" r="15" fill="#f1c40f" stroke="white" stroke-width="3" />
+
+  <!-- 7. Облака (упрощенные, но узнаваемые) -->
+  <path d="M120 260 C120 280 160 280 160 260 C180 260 180 290 200 290 C220 290 220 260 240 260 C260 260 300 280 300 260" 
+        fill="white" filter="url(#glow)" opacity="0.8" />
+
+  <!-- 8. Звезды (простые многоугольники) -->
+  <polygon points="200,160 205,175 220,175 208,185 213,200 200,190 187,200 192,185 180,175 195,175" fill="white" />
+  <polygon points="150,220 155,235 170,235 158,245 163,260 150,250 137,260 142,245 130,235 145,235" fill="white" />
+  <circle cx="250" cy="180" r="3" fill="white" />
+  <circle cx="160" cy="190" r="2" fill="white" />
 </svg>
