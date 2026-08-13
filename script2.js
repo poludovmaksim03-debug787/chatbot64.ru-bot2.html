@@ -74,6 +74,12 @@ async recognizeTextFromImage(imageData) {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
+                    modelUri: 'gpt://b1ghp2t1hbddkurtrt9g/yandexgpt-5-pro/latest'
+                    completionOptions: {
+                      stream: false,
+                      temperature: 0.3,
+                      maxTokens: "7000"
+                    },
                     messages: [
                         {
                             role: 'system',
@@ -84,7 +90,6 @@ async recognizeTextFromImage(imageData) {
             content: prompt
         }
             ],
-            max_tokens: 1500
         })
     });
 
