@@ -75,7 +75,7 @@ async recognizeTextFromImage(imageData) {
                 },
                 body: JSON.stringify({
                     modelUri: 'gpt://b1ghp2t1hbddkurtrt9g/yandexgpt-5-pro/latest', 
-                      stream: false,
+                      stream: true,
                       temperature: 0.3,
                       maxTokens: "7000",
                     
