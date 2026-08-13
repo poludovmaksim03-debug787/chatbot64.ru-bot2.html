@@ -106,7 +106,6 @@ async recognizeTextFromImage(imageData) {
         throw error;
     }
 }
-askYandexGPT()
 
 async processHomework(text) {
     try {
