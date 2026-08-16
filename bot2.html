@@ -1,3 +1,14 @@
+import express from 'express'
+import path from 'path'
+import { fileURLToPath } from 'url'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+
+const app = express()
+
+app.get('/', (req, res) => {
+  res.type('html').send(`
 <!DOCTYPE html>        
 <html lang="ru"> 
 <head>
@@ -74,8 +85,14 @@
     } catch (e) {
       out.textContent = 'Ошибка сети: ' + e.message;
       console.error(e);
-    }
+    } 
   });
 </script>
 </body>
 </html> 
+`)
+})
+const PORT = process.env.PORT || 5500
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`)
+})
