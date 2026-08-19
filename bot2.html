@@ -54,29 +54,8 @@
             </div>
         </div>
     </div>
-<script type="module">
-  const url = 'https://functions.yandexcloud.net/d4e0djanh02gmh4he289';
-
-  document.getElementById('sendBtn').addEventListener('click', async () => {
-    const out = document.getElementById('output');
-    out.textContent = 'Запрос...';
-
-    try {
-      const res = await fetch(url, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ question: 'Привет, как дела?' })
-      });
-
-      const data = await res.json();
-      out.textContent = JSON.stringify(data, null, 2);
-      console.log('Ответ:', data);
-    } catch (e) {
-      out.textContent = 'Ошибка сети: ' + e.message;
-      console.error(e);
-    } 
-  });
-</script>
+    <script src="https://ai.api.cloud.yandex.net/v1"></script>
+    <script src="script2.js"></script>
 </body>
 </html> 
 
