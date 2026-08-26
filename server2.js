@@ -25,7 +25,7 @@ app.post('/api/yandex-gpt', async (req, res) => {
       return res.status(400).json({ error: 'Некорректные данные запроса' });
     }
 
-    const response = await axios.post('https://ai.api.cloud.yandex.net/v1', {
+    const response = await axios.post('https://d5d4i3bo5fivbvcnab6s.6brbn2wz.apigw.yandexcloud.net', {
       modelUri: `gpt://${YANDEX_FOLDER_ID}/yandexgpt/latest`,
       completionOptions: {
         stream: false,
