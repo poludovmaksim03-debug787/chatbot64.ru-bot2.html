@@ -68,7 +68,7 @@ async recognizeTextFromImage(imageData) {
         this.status.textContent = 'Обращение к Yandex GPT...';
 
         try {
-            const response = await fetch('https://d5d4i3bo5fivbvcnab6s.6brbn2wz.apigw.yandexcloud.net', {   
+            const response = await fetch('https://d5diq35tsickiqe0oqt2.7qsg961h.apigw.yandexcloud.net', {   
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
