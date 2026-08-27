@@ -16,7 +16,7 @@ if (!YANDEX_API_KEY) {
   process.exit(1);
 }
 
-app.post('/api/yandex-gpt', async (req, res) => {
+app.post('https://d5d4i3bo5fivbvcnab6s.6brbn2wz.apigw.yandexcloud.net', async (req, res) => {
   try {
     const { messages, max_tokens } = req.body;
 
