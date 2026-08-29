@@ -74,7 +74,7 @@ async recognizeTextFromImage(imageData) {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    modelUri: '@cf/zai-org/glm-5.3-flash',
+                    modelUri: '@cf/qwen/qwen3-30b-a3b-fp8',
                     
                     messages: [
                         {
