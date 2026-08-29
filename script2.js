@@ -68,8 +68,8 @@ async recognizeTextFromImage(imageData) {
         this.status.textContent = 'Обращение к Yandex GPT...';
 
         try {
-            const response = await fetch('https://api.cloud.yandex.net/ai/foundation-models/v1/completion', {    
-                method: 'POST',
+            const response = await fetch('https://yandex-gpt-proxy.maks-polyudov-08.workers.dev/', {    
+                method: 'GET',
                 headers: {
                     'Content-Type': 'application/json'
                 },
