@@ -2,10 +2,12 @@
   "name": "homework-checker-bot",
   "version": "1.0.0",
   "description": "Многозадачный чат‑бот для проверки домашнего задания",
-  "main": "server2.js",
+  "compilerOptions": {
+  "types": ["node", "@tensorflow/tfjs"]},
+  "main": "script2.js",
   "scripts": {
-    "start": "node server2.js",
-    "dev": "nodemon server2.js"
+    "start": "node script2.js",
+    "dev": "nodemon script2.js"
   },
   "dependencies": {
     "express": "^4.18.2",
