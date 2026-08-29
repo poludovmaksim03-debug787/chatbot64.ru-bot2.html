@@ -2,10 +2,10 @@
   "name": "homework-checker-bot",
   "version": "1.0.0",
   "description": "Многозадачный чат‑бот для проверки домашнего задания",
-  "main": "script2.js",
+  "main": "server2.js",
   "scripts": {
-    "start": "node script2.js",
-    "dev": "nodemon script2.js"
+    "start": "node server2.js",
+    "dev": "nodemon server2.js"
   },
   "dependencies": {
     "express": "^4.18.2",
