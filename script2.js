@@ -74,7 +74,7 @@ async recognizeTextFromImage(imageData) {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    modelUri: 'gpt://b1ghp2t1hbddkurtrt9g/yandexgpt-5-pro/latest',
+                    modelUri: '@cf/zai-org/glm-5.3-flash',
                     
                     messages: [
                         {
