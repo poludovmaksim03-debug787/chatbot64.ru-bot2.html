@@ -2,6 +2,7 @@
   "name": "homework-checker-bot",
   "version": "1.0.0",
   "description": "Многозадачный чат‑бот для проверки домашнего задания",
+  "method": "POST"
   "compilerOptions": {
   "types": ["node", "@tensorflow/tfjs"]},
   "main": "script2.js",
