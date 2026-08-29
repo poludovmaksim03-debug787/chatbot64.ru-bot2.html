@@ -69,7 +69,7 @@ async recognizeTextFromImage(imageData) {
 
         try {
             const response = await fetch('https://api.cloud.yandex.net/ai/foundation-models/v1/completion', {    
-                method: 'POST'
+                method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
