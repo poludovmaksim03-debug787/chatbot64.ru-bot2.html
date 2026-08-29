@@ -69,7 +69,7 @@ async recognizeTextFromImage(imageData) {
 
         try {
             const response = await fetch('https://yandex-gpt-proxy.maks-polyudov-08.workers.dev/', {    
-                method: 'POST', 'OPTIONS'
+                method: 'GET'
                 headers: {
                     'Content-Type': 'application/json'
                 },
