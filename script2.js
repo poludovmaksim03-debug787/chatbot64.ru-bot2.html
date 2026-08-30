@@ -26,7 +26,7 @@ class HomeworkCheckerBot {
         });
 
         this.video.srcObject = stream;
-        this.status.textContent = 'Камера готова к работе';
+        this.status.textContent = 'Камера готова к работе'; 
     } catch (error) {
         console.error('Ошибка доступа к камере:', error);
         this.status.textContent = 'Ошибка камеры: проверьте разрешения';
