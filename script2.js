@@ -74,20 +74,10 @@ async recognizeTextFromImage(imageData) {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    modelUri: '@cf/qwen/qwen3-30b-a3b-fp8',
-                    
-                    messages: [
-                        {
-                            role: 'system',
-                            content: 'Ты — умный помощник для проверки домашних заданий по всем школьным предметам. Проверяй решение, находи ошибки и объясняй их. Отвечай на русском языке.'
-                },
-                {
-                    role: 'user',
-            content: prompt
-        }
-            ],
-        })
-    });
+                // Функция на бэкенде ждёт именно это поле
+                message: prompt 
+            })
+        });
 
         if (!response.ok) {
             throw new Error(`Ошибка API: ${response.status}`);
