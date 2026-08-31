@@ -2,6 +2,9 @@
   "name": "homework-checker-bot",
   "version": "1.0.0",
   "description": "Многозадачный чат‑бот для проверки домашнего задания",
+  {
+  "message": "Привет, расскажи кратко про YandexGPT"
+  }
   "main": "server2.js",
   "scripts": {
     "start": "node server2.js",
