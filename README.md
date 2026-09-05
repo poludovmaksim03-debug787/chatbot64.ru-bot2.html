@@ -60,6 +60,7 @@
                 <div class="input-area">
                     <input type="text" id="userInput" placeholder="Задайте вопрос или отправьте текст...">
             <button id="sendBtn">➤ Отправить</button>
+            <div class="elfsight-app-8cb82a83-9ac3-45e0-a047-4d1ef64ebf17" data-elfsight-app-lazy></div>
                 </div>
             </div>
 
@@ -68,6 +69,7 @@
                 <h2>🧠 Результаты проверки</h2>
                 <div id="aiResponse" class="response"></div>
                 <div class="status" id="status"></div>
+                <div class="elfsight-app-8cb82a83-9ac3-45e0-a047-4d1ef64ebf17" data-elfsight-app-lazy></div>
             </div>
         </div>
     </div>
