@@ -75,7 +75,8 @@ async recognizeTextFromImage(imageData) {
                 },
                 body: JSON.stringify({
                 // Функция на бэкенде ждёт именно это поле
-                message: prompt 
+                message: prompt,
+                stream: true
             })
         });
 
